@@ -1,0 +1,20 @@
+#include <iostream>
+int main()
+{
+int x,y;
+cin>>x>>y;
+cout<<"xµÄy´ÎÃİÎª£º"<<mi(x,y)<<endl;
+return 0
+}
+int mi(int a,int b)
+{
+if(b==0)
+	mi(a,b)=1
+else if(b>0)
+mi(a,b)=a*mi(a,b-1);
+else 
+mi(a,b)=mi(a,b+1)/a
+end 
+end 
+return mi(a,b)
+}

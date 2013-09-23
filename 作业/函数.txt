@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int result(int x,int y)
+{
+	int a=1,b=1;
+	int i,c;
+	for(i=1;i<=y;i++)
+	{
+		a=a*i;
+	b=b*(x-i+1);
+	}
+	c=b/a;
+	return c;
+}
+int main()
+{
+int m,n;
+cin>>m>>n;
+cout<<"½á¹ûÊÇ£º"<<result(m,n)<<endl;
+return 0;
+}
